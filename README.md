@@ -59,7 +59,6 @@ mongodb:
   image:
     registry: docker.io
     repository: bitnamilegacy/mongodb
-    tag: 7.0.7-debian-12-r0
 EOF
 ```
 
