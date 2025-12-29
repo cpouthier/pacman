@@ -82,7 +82,7 @@ helm template pacman . -f values-override.yaml | grep -i "bitnami"
 You should see lines similar to:
 
 ```
-image: docker.io/bitnamilegacy/mongodb:7.0.7-debian-12-r0
+image: docker.io/bitnamilegacy/mongodb:xxxx
 ```
 
 If you see `bitnami/mongodb`, your override is not applied correctly.
@@ -117,7 +117,7 @@ kubectl -n pacman get pods -l app.kubernetes.io/name=mongodb \
 Expected result:
 
 ```
-docker.io/bitnamilegacy/mongodb:7.0.7-debian-12-r0
+docker.io/bitnamilegacy/mongodb:xxx
 ```
 
 ---
